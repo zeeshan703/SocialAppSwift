@@ -8,6 +8,7 @@
 import UIKit
 
 final class AddNewPostViewModel {
+    
     var eventHandler: Observable<Event> = Observable(nil)
     var post: PostModel?    
     
