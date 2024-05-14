@@ -1,4 +1,4 @@
 -> Download project
--> Open SocialAppSwift.xcworkspace
+-> Open 'SocialAppSwift.xcworkspace' file
 -> Clean and build project
 -> Enjoy
