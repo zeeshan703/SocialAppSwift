@@ -30,4 +30,17 @@ final class PostTests: XCTestCase {
         // Assert that data source is not nil after fetch
         XCTAssertNotNil(viewModel.dataSource, "Data source should not be nil after fetch")
     }
+    
+    func testAddingNewPost() {
+        // Arrange
+        let initialPostCount = viewModel.dataSource?.count ?? 0
+        let newPost = PostModel()
+        
+        // Act
+        viewModel.insertNewPostAndRefresh(post: newPost)
+        
+        // Assert
+        XCTAssertEqual(viewModel.dataSource?.count, initialPostCount + 1, "Data source count should increase by 1 after adding a new post")
+        XCTAssertEqual(viewModel.dataSource?.first?.title, newPost.title, "First post in the data source should be the newly added post")
+    }
 }
