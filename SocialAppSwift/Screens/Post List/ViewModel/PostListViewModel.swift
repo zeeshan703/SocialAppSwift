@@ -81,7 +81,11 @@ final class PostListViewModel {
     }
     
     func insertNewPostAndRefresh(post: PostModel) {
-        dataSource?.insert(post, at: 0)
+        if var _ = dataSource {
+            dataSource?.insert(post, at: 0)
+        } else {
+            dataSource = [post]
+        }
         self.mapPostData()
     }
 }
