@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SocialAppSwift.xctestplan">
-   </FileRef>
-   <FileRef
       location = "group:SocialAppSwift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocialAppSwift.xctestplan">
    </FileRef>
 </Workspace>
