@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../test_plans/SocialAppSwift.xctestplan"
+            reference = "container:SocialAppSwift.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
